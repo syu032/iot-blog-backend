@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/iot_blog?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: "123456"  # 注意这里！换成你刚才安装 MySQL 时设置的密码！
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
